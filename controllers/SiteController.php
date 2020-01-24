@@ -117,34 +117,9 @@ class SiteController extends Controller
         $searchModel = new AdmissionSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-//        VarDumper::dump($dataProvider->getModels(),10,1); die;
-
-        $departments = Department::find()->all();
-
         return $this->render('admission', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-            'departments' => $departments
         ]);
-    }
-
-    public function actionHistory()
-    {
-        return $this->render('history');
-    }
-
-    public function actionOurServices()
-    {
-        return $this->render('our-services');
-    }
-
-    public function actionInsurance()
-    {
-        return $this->render('insurance');
-    }
-
-    public function actionDirection()
-    {
-        return $this->render('direction');
     }
 }

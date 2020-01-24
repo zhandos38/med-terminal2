@@ -12,7 +12,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(['options' => ['data-pjax' => true, 'class' => 'kiosk__search-form' ], 'method' => 'GET', 'action' => Url::to(['site/admission'])]); ?>
 
-    <?= $form->field($searchModel, 'full_name')->textInput(['maxlength' => 200, 'placeholder' => Yii::t('site', 'Введите имя пациента'), 'data-mlkeyboard-layout' => 'ru_RU']) ?>
+    <?= $form->field($searchModel, 'full_name')->textInput(['maxlength' => 200, 'placeholder' => Yii::t('site', 'Введите имя или ИИН пациента')])->label(false) ?>
 
     <div class="form-group kiosk__submit">
         <?= Html::submitButton(Yii::t('site', 'Искать'), ['class' => 'btn btn-primary']) ?>

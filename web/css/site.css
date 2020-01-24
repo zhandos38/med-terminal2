@@ -110,7 +110,7 @@ a.desc:after {
 
 /* Header */
 .header {
-    height: 72px;
+    height: 76px;
     background-color: #222d32;
     padding-top: 20px;
 }
@@ -119,7 +119,7 @@ a.desc:after {
 }
 .header__name {
     color: #fff;
-    font-size: 22px;
+    font-size: 26px;
 }
 .select-lang__link {
     text-decoration: unset;
@@ -385,4 +385,11 @@ a.desc:after {
 }
 .direction__image {
     width: 250px;
+}
+
+.kiosk__search-form {
+    display: flex;
+}
+.field-admissionsearch-full_name {
+    width: 90%;
 }

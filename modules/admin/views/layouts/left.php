@@ -19,39 +19,8 @@
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
                     ['label' => 'Меню', 'options' => ['class' => 'header']],
-                    ['label' => 'Работники', 'icon' => 'file-code-o', 'url' => ['/admin/employee/index']],
-                    ['label' => 'Должности', 'icon' => 'file-code-o', 'url' => ['/admin/position/index']],
                     ['label' => 'Отделении', 'icon' => 'file-code-o', 'url' => ['/admin/department/index']],
                     ['label' => 'Пациенты', 'icon' => 'file-code-o', 'url' => ['/admin/admission/index']],
-                    ['label' => 'Рейтинги', 'icon' => 'file-code-o', 'url' => ['/admin/rating/index']],
-                    ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
-                    ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
-                    [
-                        'label' => 'Some tools',
-                        'icon' => 'share',
-                        'url' => '#',
-                        'items' => [
-                            ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii'],],
-                            ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug'],],
-                            [
-                                'label' => 'Level One',
-                                'icon' => 'circle-o',
-                                'url' => '#',
-                                'items' => [
-                                    ['label' => 'Level Two', 'icon' => 'circle-o', 'url' => '#',],
-                                    [
-                                        'label' => 'Level Two',
-                                        'icon' => 'circle-o',
-                                        'url' => '#',
-                                        'items' => [
-                                            ['label' => 'Level Three', 'icon' => 'circle-o', 'url' => '#',],
-                                            ['label' => 'Level Three', 'icon' => 'circle-o', 'url' => '#',],
-                                        ],
-                                    ],
-                                ],
-                            ],
-                        ],
-                    ],
                 ],
             ]
         ) ?>
