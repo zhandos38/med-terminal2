@@ -1,7 +1,7 @@
 html,
 body {
     height: 100%;
-    background: url("/img/background.jpg") no-repeat;
+    background: url("/img/med-back.jpg") no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -392,4 +392,20 @@ a.desc:after {
 }
 .field-admissionsearch-full_name {
     width: 90%;
+}
+
+.container-wrapper {
+    background-color: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.kiosk-form__input {
+    height: 62px;
+    padding: 6px 12px;
+    font-size: 20px;
+}
+
+.kisok-form__btn {
+    height: 62px;
+    font-size: 20px;
 }
